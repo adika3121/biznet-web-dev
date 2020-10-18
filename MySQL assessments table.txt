@@ -1,0 +1,5 @@
+Select (select date from assessments between '1/3/2011 00:00:00' and '30/4/2011 00:00:00') as day , 
+(select score from assessments where score>0) as num_pos_scores,
+(select score from assessments where score <0) as num_neg_scores from assessments where date between '1/3/2011 00:00:00' and '30/4/2011 00:00:00'
+
+Select date from assessments where date between '1/1/2011 00:00:00' and '30/6/2011 00:00:00' and score > 0
